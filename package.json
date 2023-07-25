@@ -1,4 +1,5 @@
 {
+  "homepage":"http://Deekshithgowda007.github.io/ohif-demo",
   "name": "ohif-monorepo-root",
   "private": true,
   "workspaces": {
@@ -17,6 +18,8 @@
     "yarn": ">=1.16.0"
   },
   "scripts": {
+    "predeploy" : "npm run build",
+"deploy" : "gh-pages -d build",
     "cm": "npx git-cz",
     "build": "lerna run build:viewer --stream",
     "build:dev": "lerna run build:dev --stream",
